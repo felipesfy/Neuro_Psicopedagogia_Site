@@ -30,7 +30,7 @@
 
 .logo{
   font-weight:600;
-  font-size:18px;
+  font-size:25px;
   color:#222;
 }
 
@@ -70,7 +70,7 @@
 
 .hero{
   position: relative;
-  height: 480px;
+  height: 700px;
 
   background-image: url("banner.jpg");
   background-size: cover;
@@ -176,7 +176,7 @@
 /* HERO AREA responsivo */
 .hero-area{
   background:#eee9e2;
-  padding-top:40px;
+  padding-top:5px;
   padding-bottom:0;
 
   padding-left: min(2cm, 24px);
@@ -186,6 +186,8 @@
 /* HERO não precisa mais de margem lateral fixa */
 .hero{
   width: 100%;
+  max-width:1600px;
+  margin:auto
 }
 
 /* Header em telas menores */
