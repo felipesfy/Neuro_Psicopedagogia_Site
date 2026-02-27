@@ -10,7 +10,7 @@
 ====================== */
 
 .topo{
-  background:white;
+  background:#eee9e2;
   height:70px;
   display:flex;
   align-items:center;
@@ -69,22 +69,24 @@
 ====================== */
 
 .hero{
-  position:relative;
-  height:480px;
+  position: relative;
+  height: 480px;
 
-  max-width:1200px;
-  margin:40px auto;   /* cria espaço nas laterais e em cima */
+  background-image: url("banner.jpg");
+  background-size: cover;
+  background-position: center;
 
-  background-image:url("banner.jpg");
-  background-size:cover;
-  background-position:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  border-radius: 12px;
+  overflow: hidden;
+}
 
-  border-radius:12px;
-  overflow:hidden;
+.hero-area{
+  background:#eee9e2;
+  padding:40px 2cm 0 2cm;
 }
 
 /* leve camada para facilitar leitura */
@@ -107,11 +109,66 @@
   z-index:1;
 }
 
+.marca{
+  background:#eee9e2;
+  padding:90px 2cm;
+  margin-top:0;
+}
+
+.marca-container{
+  max-width:1200px;
+  margin:auto;
+
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  align-items:center;
+  gap:60px;
+}
+
+/* imagem */
+
+.marca-imagem img{
+  width:100%;
+  border-radius:6px;
+  object-fit:cover;
+}
+
+/* conteúdo */
+
+.marca-conteudo h2{
+  font-size:46px;
+  line-height:1.1;
+  margin-bottom:25px;
+  color:#5b3a1e;
+}
+
+.marca-conteudo p{
+  font-size:16px;
+  line-height:1.7;
+  color:#6a5846;
+  max-width:520px;
+}
+
+/* botão */
+
+.btn-marca{
+  display:inline-block;
+  margin-top:35px;
+  padding:14px 40px;
+  background:#5b3a1e;
+  color:white;
+  text-decoration:none;
+  border-radius:40px;
+  font-weight:600;
+  font-size:14px;
+  letter-spacing:.5px;
+}
+
 /* ======================
    Responsivo
 ====================== */
 
-@media(max-width:768px){
+@media(max-width:900px){
 
   .menu{
     gap:15px;
@@ -121,4 +178,18 @@
     font-size:26px;
     padding:0 20px;
   }
+
+  .marca{
+    padding:60px 20px;
+  }
+
+  .marca-container{
+    grid-template-columns: 1fr;
+    text-align:center;
+  }
+
+  .marca-conteudo p{
+    margin:auto;
+  }
+  
 }
