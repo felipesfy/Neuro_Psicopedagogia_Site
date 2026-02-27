@@ -111,7 +111,12 @@
 
 .marca{
   background:#eee9e2;
-  padding:90px 2cm;
+  padding-top:90px;
+  padding-bottom:90px;
+
+  padding-left: min(2cm, 24px);
+  padding-right: min(2cm, 24px);
+
   margin-top:0;
 }
 
@@ -164,9 +169,83 @@
   letter-spacing:.5px;
 }
 
-/* ======================
-   Responsivo
-====================== */
+/* =========================
+   Ajustes multiplataforma
+========================= */
+
+/* HERO AREA responsivo */
+.hero-area{
+  background:#eee9e2;
+  padding-top:40px;
+  padding-bottom:0;
+
+  padding-left: min(2cm, 24px);
+  padding-right: min(2cm, 24px);
+}
+
+/* HERO não precisa mais de margem lateral fixa */
+.hero{
+  width: 100%;
+}
+
+/* Header em telas menores */
+@media (max-width: 768px){
+
+  .topo{
+    height:auto;
+    padding:12px 0;
+  }
+
+  .container-topo{
+    flex-direction:column;
+    gap:12px;
+  }
+
+  .menu{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:16px;
+  }
+
+  .hero{
+    height:320px;
+  }
+
+  .hero h1{
+    font-size:22px;
+  }
+
+  .marca{
+    padding:60px 20px;
+  }
+
+  .marca-conteudo h2{
+    font-size:30px;
+  }
+
+}
+
+/* Telas muito pequenas */
+@media (max-width: 480px){
+
+  .hero{
+    height:260px;
+  }
+
+  .menu a{
+    font-size:14px;
+  }
+
+  .btn-marca{
+    padding:12px 28px;
+    font-size:13px;
+  }
+
+  .marca-conteudo p{
+    font-size:15px;
+  }
+
+}
 
 @media(max-width:900px){
 
