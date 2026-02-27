@@ -2,43 +2,29 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Portal de Neuropsicopedagogia</title>
+<title>Título do seu site</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>Portal de Neuropsicopedagogia</h1>
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="sobre.html">Sobre mim</a>
-  </nav>
+<header class="topo">
+  <div class="container-topo">
+    <div class="logo">Título do seu site</div>
+
+    <nav class="menu">
+      <a href="#">Serviços</a>
+      <a href="#">Quem somos</a>
+      <a href="#">Contato</a>
+      <a href="#" class="btn">Agende agora</a>
+    </nav>
+  </div>
 </header>
 
-<section id="home">
-  <h2>Bem-vindo(a)</h2>
-  <p>
-    Um espaço dedicado ao acompanhamento, apoio e desenvolvimento
-    dos processos de aprendizagem.
-  </p>
+<section class="hero">
+  <div class="overlay"></div>
+
+  <h1>Explorando a Ciência da Mente Humana</h1>
 </section>
 
-<section id="mural">
-  <h2>Mural de atividades</h2>
-
-  <div class="form">
-    <input type="text" id="titulo" placeholder="Título da atividade">
-    <textarea id="descricao" placeholder="Descrição da atividade"></textarea>
-    <button onclick="adicionar()">Adicionar atividade</button>
-  </div>
-
-  <div id="lista"></div>
-</section>
-
-<footer>
-  <p>© 2026 – Portal de Neuropsicopedagogia</p>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
