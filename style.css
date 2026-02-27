@@ -72,6 +72,9 @@
   position:relative;
   height:480px;
 
+  max-width:1200px;
+  margin:40px auto;   /* cria espaço nas laterais e em cima */
+
   background-image:url("banner.jpg");
   background-size:cover;
   background-position:center;
@@ -79,6 +82,9 @@
   display:flex;
   align-items:center;
   justify-content:center;
+
+  border-radius:12px;
+  overflow:hidden;
 }
 
 /* leve camada para facilitar leitura */
